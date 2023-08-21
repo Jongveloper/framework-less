@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>
+        Frameworkless Frontend Development: Web Components
+    </title>
+</head>
+
+<body>
+    <!-- <hello-world/> -->
+    <!-- <button id="elem">우종혁님, 환영합니다.</button> -->
+    <button id="elem" onclick="alert('클릭');">자동으로 클릭되는 버튼</button>
+
+    <script>
+        let event = new Event("click");
+        elem.dispatchEvent(event);
+    </script>
+    <!-- <script>
+        elem.addEventListener("hello", (event) => {
+            alert(event.detail.name);
+        });
+
+        elem.dispatchEvent(new CustomEvent("hello", {
+            detail: {name: "종혁"}
+        }));
+    </script> -->
+</body>
+
+</html>
